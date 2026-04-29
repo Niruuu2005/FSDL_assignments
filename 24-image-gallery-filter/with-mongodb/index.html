@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curated Gallery | Premium Edition</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="controls">
+        <button class="filter-btn active" onclick="Gallery.filter('all', this)">All</button>
+        <button class="filter-btn" onclick="Gallery.filter('nature', this)">Nature</button>
+        <button class="filter-btn" onclick="Gallery.filter('tech', this)">Technology</button>
+        <button class="filter-btn" onclick="Gallery.filter('urban', this)">Urban</button>
+    </div>
+
+    <div class="gallery">
+        <div class="item" data-cat="nature"><div class="placeholder-content">🌲</div><div class="info">Deep Woods</div></div>
+        <div class="item" data-cat="tech"><div class="placeholder-content">💻</div><div class="info">Future Systems</div></div>
+        <div class="item" data-cat="urban"><div class="placeholder-content">🏙️</div><div class="info">Neon Streets</div></div>
+        <div class="item" data-cat="nature"><div class="placeholder-content">🌊</div><div class="info">Crystal Waters</div></div>
+        <div class="item" data-cat="tech"><div class="placeholder-content">🚀</div><div class="info">Mars Mission</div></div>
+        <div class="item" data-cat="urban"><div class="placeholder-content">🌉</div><div class="info">Night Bridge</div></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="mongodb.js"></script>
+</body>
+</html>

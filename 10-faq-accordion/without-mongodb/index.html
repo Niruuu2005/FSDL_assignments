@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Accordion | Premium Edition</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="faq-container">
+        <h1>Common Questions</h1>
+        
+        <div class="faq-item">
+            <div class="faq-header" onclick="toggleFaq(this)">
+                <h3>How do I get started with FSDL?</h3>
+                <span class="icon">▾</span>
+            </div>
+            <div class="faq-content">
+                <div class="inner-content">
+                    Simply follow the practicals in sequential order. Each module builds upon the technical foundations established in the previous one.
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-header" onclick="toggleFaq(this)">
+                <h3>Are these components responsive?</h3>
+                <span class="icon">▾</span>
+            </div>
+            <div class="faq-content">
+                <div class="inner-content">
+                    Yes, every component is designed with a mobile-first approach, ensuring seamless rendering across desktops, tablets, and smartphones.
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-header" onclick="toggleFaq(this)">
+                <h3>Can I customize the styling?</h3>
+                <span class="icon">▾</span>
+            </div>
+            <div class="faq-content">
+                <div class="inner-content">
+                    Absolutely. The CSS uses custom properties (variables) making it extremely easy to update colors, fonts, and spacing across the entire project.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

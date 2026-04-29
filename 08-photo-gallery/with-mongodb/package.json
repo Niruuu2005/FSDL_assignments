@@ -1,0 +1,11 @@
+{
+  "name": "08-photo-gallery-with-mongodb",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongodb": "^6.17.0"
+  }
+}

@@ -1,0 +1,94 @@
+:root {
+    --bg-main: #ffffff;
+    --border-color: #eaeaea;
+    --text-primary: #111111;
+    --text-secondary: #666666;
+    --color-accent: #222222;
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-main);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    background: #8a6b6b;
+    width: 100%;
+    max-width: 480px;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+
+.skill-input-group {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 40px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+input {
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-family: var(--font-sans);
+    flex: 1;
+}
+
+button {
+    background: var(--text-primary);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+}
+
+.progress-container {
+    height: 4px;
+    background: #f0f0f0;
+}
+
+.progress-bar {
+    height: 100%;
+    background: var(--color-accent);
+}
+
+#status {
+    margin-top: 16px;
+    color: #ffffff;
+    font-size: 0.875rem;
+}

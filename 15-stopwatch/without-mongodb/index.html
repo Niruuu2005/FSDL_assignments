@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Stopwatch | Premium Edition</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;800&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="watch-container">
+        <div class="display" id="display">00:00:00</div>
+        
+        <div class="controls">
+            <button class="btn start" id="startBtn" onclick="Stopwatch.start()">START</button>
+            <button class="btn stop" id="stopBtn" onclick="Stopwatch.stop()">STOP</button>
+            <button class="btn reset" onclick="Stopwatch.reset()">RESET</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

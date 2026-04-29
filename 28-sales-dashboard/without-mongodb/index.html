@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Analytics | Premium Edition</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Scripts (External CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Executive Dashboard</h1>
+        <div style="color: #64748b;">Real-time Business Performance Metrics</div>
+    </div>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div style="color: #64748b; font-size: 0.85rem;">Total Revenue</div>
+            <div class="stat-val">$33,400</div>
+        </div>
+        <div class="stat-card">
+            <div style="color: #64748b; font-size: 0.85rem;">New Customers</div>
+            <div class="stat-val">1,240</div>
+        </div>
+        <div class="stat-card">
+            <div style="color: #64748b; font-size: 0.85rem;">Conversion Rate</div>
+            <div class="stat-val">3.4%</div>
+        </div>
+        <div class="stat-card">
+            <div style="color: #64748b; font-size: 0.85rem;">Active Users</div>
+            <div class="stat-val">8.2k</div>
+        </div>
+    </div>
+
+    <div class="charts-main">
+        <div class="chart-box">
+            <h3>Revenue Growth (Line)</h3>
+            <div class="canvas-container">
+                <canvas id="revenueChart"></canvas>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 30px;">
+            <div class="chart-box">
+                <h3>Category Sales (Bar)</h3>
+                <div class="canvas-container" style="height: 200px;">
+                    <canvas id="categoryChart"></canvas>
+                </div>
+            </div>
+            <div class="chart-box">
+                <h3>Regional Split (Pie)</h3>
+                <div class="canvas-container" style="height: 200px;">
+                    <canvas id="regionChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

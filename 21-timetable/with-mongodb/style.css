@@ -1,0 +1,64 @@
+:root {
+    --primary: #6366f1;
+    --bg: #f8fafc;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: #1e293b;
+    padding: 60px 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05);
+}
+
+h1 { text-align: center; margin-bottom: 40px; font-size: 2rem; font-weight: 700; }
+
+table { width: 100%; border-collapse: separate; border-spacing: 4px; }
+
+th {
+    background: #f1f5f9;
+    padding: 20px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #64748b;
+    letter-spacing: 0.05em;
+}
+
+td {
+    height: 100px;
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 0.85rem;
+    vertical-align: top;
+    background: #fafafa;
+    border: 1px solid #f1f5f9;
+}
+
+.slot {
+    border-radius: 8px;
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.slot.coding { background: #e0e7ff; color: #4338ca; border-left: 4px solid #6366f1; }
+.slot.design { background: #fae8ff; color: #a21caf; border-left: 4px solid #d946ef; }
+.slot.meeting { background: #fef3c7; color: #b45309; border-left: 4px solid #f59e0b; }
+.slot.lab { background: #dcfce7; color: #15803d; border-left: 4px solid #22c55e; }
+
+.slot-title { font-weight: 700; margin-bottom: 4px; }
+.slot-time { font-size: 0.75rem; opacity: 0.8; }

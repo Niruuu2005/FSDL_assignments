@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Glossary</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Digital Glossary</h1>
+        <p class="subtitle">Quick reference for essential HTML5 tags</p>
+
+        <div class="search-wrapper">
+            <input type="text" id="search" placeholder="Filter tags (e.g. div, section, header)..."
+                onkeyup="filterTable()">
+        </div>
+
+        <table id="glossaryTable">
+            <thead>
+                <tr>
+                    <th>Tag Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+        <div id="statusMessage" class="no-results" style="display: block;">Loading glossary data...</div>
+        <div id="noResults" class="no-results">No tags found matching your search.</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

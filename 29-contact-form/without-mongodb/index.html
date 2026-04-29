@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Premium Edition</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contact-card">
+        <h2>Get in Touch</h2>
+        <p class="subtitle">Have a question? We'd love to hear from you.</p>
+        
+        <form onsubmit="ContactForm.submit(event)">
+            <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" name="name" placeholder="Alex Rivera" required>
+            </div>
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" name="email" placeholder="alex@example.com" required>
+            </div>
+            <div class="form-group">
+                <label>Message</label>
+                <textarea name="message" rows="5" placeholder="How can we help you?" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+
+        <div id="status"></div>
+
+        <div class="tech-stack">
+            <span class="badge">Node.js</span>
+            <span class="badge">Express</span>
+            <span class="badge">MongoDB</span>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

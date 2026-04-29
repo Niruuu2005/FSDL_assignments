@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Filter | Premium Edition</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <button class="filter-btn active" onclick="Filter.render('all')">All Products</button>
+            <button class="filter-btn" onclick="Filter.render('tech')">Technology</button>
+            <button class="filter-btn" onclick="Filter.render('home')">Home & Living</button>
+            <button class="filter-btn" onclick="Filter.render('sport')">Sports</button>
+        </div>
+
+        <div class="grid" id="productGrid">
+            <!-- Filtered products injected via JS -->
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="mongodb.js"></script>
+</body>
+</html>

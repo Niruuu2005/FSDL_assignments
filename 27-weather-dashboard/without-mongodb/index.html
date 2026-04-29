@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Intelligence | Premium Edition</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Scripts (External CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <div class="current-card">
+            <div>
+                <p style="text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.8;">San Francisco</p>
+                <div class="temp">22°</div>
+                <p style="font-size: 1.25rem;">Sunny Intervals</p>
+            </div>
+            <div style="display: flex; gap: 20px; font-size: 0.9rem;">
+                <span>💧 64%</span>
+                <span>🌬️ 12km/h</span>
+            </div>
+        </div>
+
+        <div class="chart-card">
+            <h3>Temperature Forecast (Line)</h3>
+            <div class="canvas-container">
+                <canvas id="lineChart"></canvas>
+            </div>
+        </div>
+
+        <div class="chart-card">
+            <h3>Weekly Rainfall (Bar)</h3>
+            <div class="canvas-container">
+                <canvas id="barChart"></canvas>
+            </div>
+        </div>
+
+        <div class="chart-card">
+            <h3>Humidity Breakdown (Pie)</h3>
+            <div class="canvas-container">
+                <canvas id="pieChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Tech Summit | Registration</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="event-card">
+        <div class="image-side">
+            <h1>Global<br>Tech<br>Summit.</h1>
+            <p style="font-weight: 700; opacity: 0.9;">August 24-26, 2026 • Virtual</p>
+        </div>
+        
+        <div class="form-side">
+            <h2>Reserve Your Spot</h2>
+            <form onsubmit="Registration.submit(event)">
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Alex Rivera" required>
+                </div>
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="alex@summit.com" required>
+                </div>
+                <div class="input-group">
+                    <label>Ticket Type</label>
+                    <select required>
+                        <option value="">Select a ticket...</option>
+                        <option value="early">Early Bird ($99)</option>
+                        <option value="standard">Standard ($199)</option>
+                        <option value="vip">VIP Pass ($499)</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Register Now</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="notification"></div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

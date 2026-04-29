@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Glossary</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Digital Glossary</h1>
+        <p class="subtitle">Quick reference for essential HTML5 tags</p>
+
+        <div class="search-wrapper">
+            <input type="text" id="search" placeholder="Filter tags (e.g. div, section, header)..."
+                onkeyup="filterTable()">
+        </div>
+
+        <table id="glossaryTable">
+            <thead>
+                <tr>
+                    <th>Tag Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <tr>
+                    <td>&lt;main&gt;</td>
+                    <td>Specifies the main content of a document.</td>
+                </tr>
+                <tr>
+                    <td>&lt;section&gt;</td>
+                    <td>Defines a section in a document.</td>
+                </tr>
+                <tr>
+                    <td>&lt;article&gt;</td>
+                    <td>Defines an independent, self-contained content.</td>
+                </tr>
+                <tr>
+                    <td>&lt;aside&gt;</td>
+                    <td>Defines content aside from the page content (like a sidebar).</td>
+                </tr>
+                <tr>
+                    <td>&lt;header&gt;</td>
+                    <td>Defines a header for a document or a section.</td>
+                </tr>
+                <tr>
+                    <td>&lt;footer&gt;</td>
+                    <td>Defines a footer for a document or a section.</td>
+                </tr>
+                <tr>
+                    <td>&lt;nav&gt;</td>
+                    <td>Defines a set of navigation links.</td>
+                </tr>
+                <tr>
+                    <td>&lt;figure&gt;</td>
+                    <td>Specifies self-contained content, like illustrations or photos.</td>
+                </tr>
+                <tr>
+                    <td>&lt;figcaption&gt;</td>
+                    <td>Defines a caption for a &lt;figure&gt; element.</td>
+                </tr>
+                <tr>
+                    <td>&lt;details&gt;</td>
+                    <td>Defines additional details that the user can view or hide.</td>
+                </tr>
+                <tr>
+                    <td>&lt;summary&gt;</td>
+                    <td>Defines a visible heading for a &lt;details&gt; element.</td>
+                </tr>
+                <tr>
+                    <td>&lt;mark&gt;</td>
+                    <td>Defines marked/highlighted text.</td>
+                </tr>
+                <tr>
+                    <td>&lt;time&gt;</td>
+                    <td>Defines a specific time (or datetime).</td>
+                </tr>
+                <tr>
+                    <td>&lt;canvas&gt;</td>
+                    <td>Used to draw graphics via scripting (usually JavaScript).</td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="noResults" class="no-results">No tags found matching your search.</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

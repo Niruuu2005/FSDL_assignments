@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass Calculator | Premium Edition</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" class="display" id="display" value="0" readonly>
+        
+        <div class="grid">
+            <button class="clear" onclick="Calculator.clear()">C</button>
+            <button onclick="Calculator.append('/')" class="op">/</button>
+            <button onclick="Calculator.append('*')" class="op">×</button>
+            <button onclick="Calculator.append('-')" class="op">−</button>
+            
+            <button onclick="Calculator.append('7')">7</button>
+            <button onclick="Calculator.append('8')">8</button>
+            <button onclick="Calculator.append('9')">9</button>
+            <button onclick="Calculator.append('+')" class="op">+</button>
+            
+            <button onclick="Calculator.append('4')">4</button>
+            <button onclick="Calculator.append('5')">5</button>
+            <button onclick="Calculator.append('6')">6</button>
+            <button onclick="Calculator.calculate()" class="equal">=</button>
+            
+            <button onclick="Calculator.append('1')">1</button>
+            <button onclick="Calculator.append('2')">2</button>
+            <button onclick="Calculator.append('3')">3</button>
+            <button onclick="Calculator.append('0')">0</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="mongodb.js"></script>
+</body>
+</html>

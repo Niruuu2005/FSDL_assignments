@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App | Premium Edition</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="todo-card">
+        <h1>Task Inbox.</h1>
+        <div class="input-row">
+            <input type="text" id="todoInput" placeholder="What needs to be done?" onkeyup="if(event.key==='Enter') TodoApp.add()">
+            <button class="add-btn" onclick="TodoApp.add()">Add</button>
+        </div>
+        <ul class="todo-list" id="todoList">
+            <!-- Todos injected via JS -->
+        </ul>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="mongodb.js"></script>
+</body>
+</html>

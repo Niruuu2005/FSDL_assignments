@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Previewer | Premium Edition</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <h1>Create Your Profile</h1>
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" id="nameInput" placeholder="e.g. Alex Rivera">
+            </div>
+            <div class="input-group">
+                <label>Job Title</label>
+                <input type="text" id="roleInput" placeholder="e.g. UI/UX Designer">
+            </div>
+            <div class="input-group">
+                <label>Short Bio</label>
+                <textarea id="bioInput" rows="4" placeholder="Tell us about yourself..."></textarea>
+            </div>
+        </div>
+
+        <div class="preview-section">
+            <div class="profile-card">
+                <div class="card-header"></div>
+                <div class="avatar-wrapper">👤</div>
+                <div class="profile-info">
+                    <div class="p-name" id="previewName">Your Name</div>
+                    <div class="p-role" id="previewRole">Job Title</div>
+                    <div class="p-bio" id="previewBio">Your professional bio will appear here as you type in the form on the left.</div>
+                    
+                    <div class="socials">
+                        <div class="social-dot"></div>
+                        <div class="social-dot"></div>
+                        <div class="social-dot"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

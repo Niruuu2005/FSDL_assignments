@@ -1,0 +1,11 @@
+{
+  "name": "24-image-gallery-filter-with-mongodb",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongodb": "^6.17.0"
+  }
+}

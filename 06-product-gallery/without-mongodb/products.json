@@ -1,0 +1,8 @@
+[
+    { "id": 1, "name": "Minimalist Watch", "price": 129, "category": "Accessories", "icon": "⌚", "tag": "New" },
+    { "id": 2, "name": "Premium Backpack", "price": 89, "category": "Travel", "icon": "🎒", "tag": "Sale" },
+    { "id": 3, "name": "Noise Cancelling Buds", "price": 199, "category": "Tech", "icon": "🎧", "tag": "Hot" },
+    { "id": 4, "name": "Smart Lamp", "price": 59, "category": "Home", "icon": "💡", "tag": "Limited" },
+    { "id": 5, "name": "Mechanical Keyboard", "price": 149, "category": "Tech", "icon": "⌨️", "tag": "New" },
+    { "id": 6, "name": "Travel Planner", "price": 25, "category": "Office", "icon": "📔", "tag": "" }
+]

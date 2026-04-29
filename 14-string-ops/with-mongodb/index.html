@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Ops | Premium Edition</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text Analyzer</h1>
+        <textarea id="strInput" rows="4" placeholder="Enter your text here..."></textarea>
+        
+        <div class="results">
+            <div class="res-row">
+                <span class="label">Character Count</span>
+                <span class="val" id="res-len">0</span>
+            </div>
+            <div class="res-row">
+                <span class="label">Reversed</span>
+                <span class="val" id="res-rev">-</span>
+            </div>
+            <div class="res-row">
+                <span class="label">Uppercase</span>
+                <span class="val" id="res-upper">-</span>
+            </div>
+            <div class="res-row">
+                <span class="label">Lowercase</span>
+                <span class="val" id="res-lower">-</span>
+            </div>
+        </div>
+        
+        <div style="margin-top: 30px; text-align: center;">
+            <button class="btn" style="color: #ef4444" onclick="StringOps.clear()">Reset Analysis</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="mongodb.js"></script>
+</body>
+</html>

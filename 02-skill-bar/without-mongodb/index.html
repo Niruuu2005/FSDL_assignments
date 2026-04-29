@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Bar Component</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Proficiency Radar</h1>
+
+        <div class="skill-input-group">
+            <input type="text" id="skillName" placeholder="Skill Name">
+            <input type="number" id="skillValue" placeholder="%" min="0" max="100">
+            <button onclick="addSkill()">Add</button>
+        </div>
+
+        <div class="skills-list" id="skillsList">
+            <div class="skill-item">
+                <div class="skill-header"><span>Frontend Architecture</span><span>90%</span></div>
+                <div class="progress-container"><div class="progress-bar" style="width:90%"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-header"><span>Creative Design</span><span>75%</span></div>
+                <div class="progress-container"><div class="progress-bar" style="width:75%"></div></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

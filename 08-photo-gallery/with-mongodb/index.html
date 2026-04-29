@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery | Premium Edition</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;800&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Moments.</h1>
+    
+    <div class="grid">
+        <div class="photo-item" onclick="Gallery.openLightbox('🏔️')">
+            <div style="height: 100%; display: flex; align-items: center; justify-content: center; font-size: 5rem; background: #1a1a1a;">🏔️</div>
+            <div class="overlay">
+                <h3>Mountain Peak</h3>
+                <p>The serenity of high altitudes.</p>
+            </div>
+        </div>
+        <div class="photo-item" onclick="Gallery.openLightbox('🌊')">
+            <div style="height: 100%; display: flex; align-items: center; justify-content: center; font-size: 5rem; background: #1a1a1a;">🌊</div>
+            <div class="overlay">
+                <h3>Ocean Breeze</h3>
+                <p>Endless blue horizons.</p>
+            </div>
+        </div>
+        <div class="photo-item" onclick="Gallery.openLightbox('🏙️')">
+            <div style="height: 100%; display: flex; align-items: center; justify-content: center; font-size: 5rem; background: #1a1a1a;">🏙️</div>
+            <div class="overlay">
+                <h3>Urban Night</h3>
+                <p>City lights that never sleep.</p>
+            </div>
+        </div>
+        <div class="photo-item" onclick="Gallery.openLightbox('🌲')">
+            <div style="height: 100%; display: flex; align-items: center; justify-content: center; font-size: 5rem; background: #1a1a1a;">🌲</div>
+            <div class="overlay">
+                <h3>Deep Forest</h3>
+                <p>Nature in its purest form.</p>
+            </div>
+        </div>
+        <div class="photo-item" onclick="Gallery.openLightbox('🚀')">
+            <div style="height: 100%; display: flex; align-items: center; justify-content: center; font-size: 5rem; background: #1a1a1a;">🚀</div>
+            <div class="overlay">
+                <h3>Discovery</h3>
+                <p>To the moon and beyond.</p>
+            </div>
+        </div>
+        <div class="photo-item" onclick="Gallery.openLightbox('🌸')">
+            <div style="height: 100%; display: flex; align-items: center; justify-content: center; font-size: 5rem; background: #1a1a1a;">🌸</div>
+            <div class="overlay">
+                <h3>Zen Garden</h3>
+                <p>Finding peace in details.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="lightbox" onclick="Gallery.closeLightbox()">
+        <div id="lb-content" style="font-size: 15rem;"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="mongodb.js"></script>
+</body>
+</html>
